@@ -1,11 +1,249 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>شركة أبو حذيفة للإنشاءات</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        .services, .about-us, .contact-details {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .services h3, .about-us h2, .contact-details p {
+            color: #007BFF;
+        }
+
+        .floating-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .floating-button {
+            display: block;
+            margin-bottom: 10px;
+            background-color: #25D366;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .floating-button.email {
+            background-color: #34B7F1;
+        }
+
+        .floating-button:hover {
+            background-color: #128C7E;
+        }
+
+        .language-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .language-button {
+            margin-right: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .language-button.arabic {
+            background-color: #DC3545;
+        }
+
+        .language-button:hover {
+            background-color: #0056b3;
+        }
+
+        .items {
+            margin: 7px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+            padding: 10px 0;
+        }
+
+        header>h1 {
+            text-align: center;
+            color: #00ff4c;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    Hello
+
+    <header>
+        <h1>    مقاولات , ترمم تکسیر للإنشاءات أبو حذيفة</h1>
+    </header>
+
+    
+
+    <nav>
+   
+        <a href="#" onclick="showSection('contact')" class="items">اتصل بنا</a>
+        <a href="#" onclick="showSection('about')" class="items">من نحن</a>
+        <a href="#" onclick="showSection('services')" class="items">خدماتنا</a>
+        <a href="#" onclick="showSection('home')" class="items">الرئيسية</a>
+
+    </nav>
+
+    <section id="home" style="display: block;">
+        <h2>مرحبًا بك في شركة أبو حذيفة للإنشاءات</h2>
+        <p>شركة أبو حذيفة للإنشاءات هي رائدة متميزة في صناعة الإنشاءات، ملتزمة بتقديم خدمات استثنائية مصممة لتلبية الاحتياجات الفريدة لعملائنا. مع تاريخ غني من المشاريع الناجحة، يظهر التفاني في التميز في كل جوانب عملنا.</p>
+        
+        <p>يقدم فريقنا المؤلف من محترفين ذوي خبرة عالية ثروة من الخبرة إلى الطاولة، مما يضمن تنفيذ كل مشروع بدقة واهتمام بالتفاصيل. من الإنشاءات السكنية إلى الإنشاءات التجارية والصناعية، نقدم حلولاً مبتكرة تتجاوز التوقعات.</p>
+
+        <p>في شركة أبو حذيفة للإنشاءات، نفخر بسمعتنا بتسليم المشاريع في الوقت المحدد والالتزام بالميزانية. يضع نهجنا الموجه نحو العميل، بالإضافة إلى التركيز على الجودة والسلامة، لنا في مكانة مرموقة كشريك موثوق في تحقيق أهدافك في مجال الإنشاء.</p>
+    </section>
+
+    <section id="services">
+        <h2>خدماتنا</h2>
+        <div class="services">
+            <div class="service">
+                <h3>الإنشاءات السكنية</h3>
+                <p>نتخصص في بناء منازل عالية الجودة وجمالية، مضمونين تحقيق منزل أحلامك.</p>
+            </div>
+
+            <div class="service">
+                <h3>الإنشاءات التجارية</h3>
+                <p>من المكاتب إلى المساحات التجارية، نقدم خدمات إنشاء تجارية شاملة تتناسب مع احتياجات عملك.</p>
+            </div>
+
+            <div class="service">
+                <h3>التجديد والتحول</h3>
+                <p>حول مساحتك الحالية مع خدماتنا في التجديد والتحول، مجمعة بين الوظائفية والتصميم الحديث.</p>
+            </div>
+
+            <!-- Add more services as needed -->
+        </div>
+    </section>
+
+    <section id="about" style="display: none;">
+        <h2>من نحن</h2>
+        <p>شركة أبو حذيفة للإنشاءات هي اسم رفيع المستوى في صناعة الإنشاءات، دفعته الشغف بالتميز والالتزام بتحقيق نتائج متفوقة. تأسست برؤية تقديم خدمات إنشاء متفوقة، وقد أكملنا بنجاح مجموعة واسعة من المشاريع، مكنتنا من كسب ثقة ورضا عملائنا.</p>
+        
+        <p>تقوم شركتنا على أساس الخبرة والنزاهة والابتكار. نحن فخورون بفريقنا الماهر من المحترفين الذين يجلبون سنوات من الخبرة إلى كل مشروع، مضمنين الدقة والاهتمام بالتفاصيل. في شركة أبو حذيفة للإنشاءات، نتقبل التحديات ونزدهر عند تحويل رؤاكم للإنشاء إلى حقيقة.</p>
+
+        <p>سواء كان الأمر يتعلق بالإنشاءات السكنية أو التجارية أو الصناعية، نتعامل مع كل مشروع بتفانٍ وتركيز على تجاوز التوقعات. شركة أبو حذيفة للإنشاءات هي شريكك الموثوق لتجربة إنشاء تجمع بين الجودة والكفاءة والتوجه نحو العميل.</p>
+    </section>
+
+    <section id="contact" style="display: none;">
+        <h2>اتصل بنا</h2>
+        <p>إذا كان لديك أي استفسار أو ترغب في مناقشة مشروع محتمل، لا تتردد في التواصل معنا:</p>
+        <div class="contact-details">
+            <p>البريد الإلكتروني: <a href="mailto:contactabuhuzifa@gmail.com">contactabuhuzifa@gmail.com</a></p>
+            <p>WhatsApp: <a href="https://wa.me/966567176614" target="_blank">+966 567 176 614</a></p>
+        </div>
+    </section>
+
+    <!-- Floating buttons for WhatsApp and Email -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/966567176614" target="_blank" class="floating-button">&#x1F4F1;</a>
+        <a href="mailto:contactabuhuzifa@gmail.com" class="floating-button email">&#x2709;</a>
+    </div>
+
+    <footer>
+        &copy; 2023 شركة أبو حذيفة للإنشاءات. جميع الحقوق محفوظة.
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        function changeLanguage(lang) {
+            // Implement logic to switch language
+            // For simplicity, let's assume you have translated content for English and Arabic
+
+            // English version
+            if (lang === 'en') {
+                document.querySelector('html').setAttribute('lang', 'en');
+            }
+            // Arabic version
+            else if (lang === 'ar') {
+                document.querySelector('html').setAttribute('lang', 'ar');
+            }
+        }
+    </script>
 </body>
 </html>
